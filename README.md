@@ -100,13 +100,29 @@ being migrated to it incrementally.
 
 ### 4. Sequence and structure analysis
 
+Accepted designs bind the groove in one of two antiparallel orientations, 291
+N-terminus proximal and 712 C-terminus proximal. The two present opposite
+sequence registers to the same surface, so a position that faces the interface
+in one faces solvent in the other. Pooling them gives a consensus that describes
+neither, and every sequence-level analysis below is therefore computed within an
+orientation.
+
+![Two rendered complexes above the mean sequence logo for each binding
+orientation, with the best third-iteration design of each written along the logo
+register.](figures/fig_logos.png)
+
+*The two orientations and their motifs. Both are enriched in glutamate, lysine,
+arginine, methionine and tryptophan, the composition expected of amphipathic
+helices. Produced by `extract_n_to_c_orientation.ipynb` and
+`sequence_analysis.ipynb`; structures rendered by `make_figure_S1.py`.*
+
 ![UMAP of the designs by binding orientation, with the seven natural ligands
 marked, and a permutation test of between-set distance for every pair of design
 sets.](figures/fig_seqspace.png)
 
-*Designs separate by binding orientation rather than by campaign, and the
-natural ligands fall inside the designed territory. Produced by
-`extract_n_to_c_orientation.ipynb` and `sequence_analysis.ipynb`.*
+*The same split seen statistically: designs separate by orientation rather than
+by campaign, and the natural ligands fall inside the designed territory.
+Produced by `sequence_analysis.ipynb`.*
 
 | Notebook | What it does |
 |---|---|
