@@ -1,0 +1,30 @@
+# .gitignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environment
+.venv/
+venv/
+.env
+
+# Editor metadata
+.idea/
+.vscode/
+
+# Generated outputs
+figures/*.png
+figures/*.pdf
+
+# Output folders
+output/
+out/
+
+# OS metadata
+.DS_Store
+Thumbs.db
